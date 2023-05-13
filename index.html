@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="form">
+      <form action="#">
+        <h3 class="formHeading">Basic Form</h3>
+        <div class="inputfield">
+          <label>First Name</label>
+          <input
+            type="text"
+            required
+            name="firstName"
+            placeholder="Enter your firstName"
+          />
+          <br />
+        </div>
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input
+            type="text"
+            required
+            name="lastName"
+            placeholder="Enter your lastName"
+          />
+          <br />
+        </div>
+        <div class="inputfield">
+          <label>Email</label>
+          <input
+            type="email"
+            required
+            name="email"
+            placeholder="Enter your email"
+          />
+          <br />
+        </div>
+        <div class="inputfield">
+          <label>D.O.B</label>
+          <input type="date" required name="dateOfBirth" max="2023-05-12" />
+          <br />
+        </div>
+        <div class="inputfield">
+          <label>Mobile No.</label>
+          <input
+            type="text"
+            required
+            pattern="[6789][0-9]{9}"
+            title="valid mobile number"
+            placeholder="Enter your mobile number"
+          />
+          <br />
+        </div>
+        <div class="inputRadio">
+          <label>Gender:</label>
+          <input type="radio" name="gender" value="male" required /> Male
+          <input type="radio" name="gender" value="female" required /> Female
+          <br />
+        </div>
+        <div class="inputfield">
+          <label>Address</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="40"
+            placeholder="Enter your address"
+          ></textarea>
+          <br />
+        </div>
+        <div class="button">
+          <button type="submit">Submit</button>
+          <button type="reset">Clear Form</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
